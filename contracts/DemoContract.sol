@@ -37,4 +37,7 @@ contract DemoContract {
     function getStr() public pure returns (string memory) {
         return "Hello";
     }
+
+    receive() external payable { }
+    fallback() external payable { }
 }
